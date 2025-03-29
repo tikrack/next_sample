@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    devIndicators: false
+    redirects() {
+        return [
+            {
+                source: "/",
+                destination: "/a",
+                permanent: true
+            }
+        ]
+    }
 };
 
 export default nextConfig;
