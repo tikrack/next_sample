@@ -1,11 +1,11 @@
 "use server"
 
-import {redirect} from "next/navigation";
+import {permanentRedirect, redirect} from "next/navigation";
 
-export default function Home() {
-  redirect("/a")
+export default async function Home() {
+  permanentRedirect("/a")
 
   return (
-      <></>
+      <>sssss</>
   );
 }
