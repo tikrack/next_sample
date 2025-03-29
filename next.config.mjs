@@ -1,14 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    redirects() {
-        return [
-            {
-                source: "/",
-                destination: "/a",
-                permanent: true
-            }
-        ]
-    }
-};
+const nextConfig = {};
 
 export default nextConfig;
